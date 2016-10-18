@@ -111,14 +111,14 @@ html, body {
 .shell {
 	display: block;
 	align: center;
-	width: 50%;
+	width: 90%;
     margin: 0 auto;
 }
 
 #top-bar {
 	display: block;
 	align: center;
-	width: 50%;
+	width: 90%;
 	margin: 0 auto;
 	text-align: center;
 	color: #525252;
@@ -132,7 +132,7 @@ html, body {
 #content {
 	display: block;
 	align: center;
-	width: 50%;
+	width: 90%;
 	margin: 0 auto;
 	padding: 15px;
 	text-align: left;
@@ -149,6 +149,44 @@ html, body {
 
 #output a {
 	color: #bbb;
+}
+
+.skills {
+	width: 90%;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.skills h3 {
+	margin-top: 0;
+}
+
+.skills ul {
+	padding-left: 60px;
+}
+
+.skills li {
+	font-size: 14px;
+	padding-left: 5px;
+}
+
+.skills li.icons {
+	list-style: none;
+	font-size: 16px;
+}
+
+.skills li#dev:before {
+	content: "\f121";
+	font-family: 'FontAwesome';
+	float: left;
+	padding-right: 5px;
+}
+
+.skills li#tools:before {
+	content: "\f120";
+	font-family: 'FontAwesome';
+	float: left;
+	padding-right: 5px;
 }
 
 /* ----- EDUCATION ----- */
