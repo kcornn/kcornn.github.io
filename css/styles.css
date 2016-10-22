@@ -332,6 +332,10 @@ html, body {
 	font-style: italic;
 }
 
+#contact i {
+	width: 20px;
+}
+
 #contact i,
 #contact p {
 	display: inline-block;
@@ -341,6 +345,7 @@ html, body {
 #contact a:hover,
 #contact a:focus {
 	text-decoration: none;
+	font-weight: bold;
 }
 
 /* ----- FOOTER ----- */
