@@ -13,6 +13,10 @@ html, body {
     outline: 0px;
 }
 
+* {
+	border-radius: 0 !important;
+}
+
 /* ----- FULLPAGE ----- */
 .full {
     position: relative;
@@ -74,6 +78,17 @@ html, body {
 
 .navbar ul {
 	list-style-type: none;
+	text-align: center;
+}
+
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
 }
 
 #myNavbar a {
@@ -82,7 +97,6 @@ html, body {
 
 #myNavbar a:hover, #myNavbar a:focus, #myNavbar .active a {
     color: #ff2d55;
-    font-weight: bold;
     background-color: #fff !important;
 }
 
