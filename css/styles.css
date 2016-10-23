@@ -17,6 +17,11 @@ html, body {
 	border-radius: 0 !important;
 }
 
+@font-face {
+	font-family: Bromello;
+	src: url(fonts/bromello.ttf);
+}
+
 /* ----- FULLPAGE ----- */
 .full {
     position: relative;
@@ -43,6 +48,7 @@ html, body {
 
 #intro h1 {
 	color: #ff2d55;
+	font-family: Bromello;
 	width: 300px;
     margin-left: auto;
     margin-right: auto;
