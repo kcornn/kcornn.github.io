@@ -116,8 +116,8 @@ html, body {
 /* ----- ABOUT ----- */
 #about {
 	display: block;
-    height: 1200px;
-    padding: 100px 10% 0 10%;
+    min-height: 1200px;
+    padding: 50px 10% 0 10%;
     text-align: center;
     background: #fff;
 }
@@ -199,8 +199,8 @@ html, body {
 /* ----- EXPERIENCE ----- */
 #experience {
 	display: block;
-    height: 1200px;
-    padding: 100px 10% 0 10%;
+	height: auto;
+    padding: 50px 10% 0 10%;
     text-align: center;
     background: #fff;
 }
@@ -278,8 +278,9 @@ html, body {
 /* ----- CONTACT ----- */
 #contact {
 	display: block;
+	height: 100%;
 	text-align: center;
-	padding: 100px 10% 0 10%;
+	padding: 50px 10% 0 10%;
 }
 
 #contact .col-sm-4 {
@@ -350,6 +351,7 @@ html, body {
 /* ----- FOOTER ----- */
 #footer {
 	height: 5%;
+	bottom: 10px;
 	text-align: left;
 	padding-left: 20px;
 }
