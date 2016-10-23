@@ -1,0 +1,29 @@
+#back {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	color: #000;
+}
+
+#photos {
+	margin-top: 50px;
+	display: table;
+	text-align: center;
+}
+
+figure {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+}
+
+img {
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+}
+
+img:hover {
+	transform: scale(1.15);
+	transition: transform .2s ease-in-out;
+}
