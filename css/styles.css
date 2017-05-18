@@ -281,6 +281,37 @@ html, body {
   	}
 }
 
+/* ----- MODALS ----*/
+
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #0c0c0c;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+  z-index: 1000;
+}
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #0c0c0c;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+
+  z-index: 1000;
+}
 /* ----- CONTACT ----- */
 #contact {
 	display: block;
