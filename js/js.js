@@ -22,3 +22,17 @@ $(function() {
         event.preventDefault();
     });
 });
+
+$(function () {
+    var selected = "";
+    $(".btn").click(function () {
+        selected = $(this).attr("data-rel");
+        console.log(selected);
+        $("#portfolio").fadeTo(300,0.1);
+        $("#portfolio div").not("."+selected).fadeOut().removeClass('animated');
+        setTimeout(function () {
+            $("."+selected).fadeIn().addClass('animated');
+            $("#portfolio").fadeTo(300,1);
+        },200);
+    });
+});

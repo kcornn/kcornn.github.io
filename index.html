@@ -95,98 +95,219 @@
     <!-- EXPERIENCE -->
     <section id="experience" class="full">
     	<h2>Experience</h2>
-    	<div class="container-fluid">
-    		<div class="row">
-    			<div class="col-md-4 col-sm-6 portfolio-item">
-    				<a href="https://yourmotivation.herokuapp.com/" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content" align="center">
-                                <p class="fa fa-plus-circle fa-4x"></i>
-                            </div>
-                        </div>
-                        <img src="img/quote.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Motivational Quote Generator</h4>
-                        <p>HTML/CSS, JavaScript</p>
-                    </div>
-    			</div>
-    			<div class="col-md-4 col-sm-6 portfolio-item">
-    				<a href="https://apo-zeta.github.io/" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <p class="fa fa-plus-circle fa-4x"></i>
-                            </div>
-                        </div>
-                        <img src="img/apo.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Alpha Phi Omega Website</h4>
-                        <p>HTML/CSS, JavaScript, AngularJS</p>
-                    </div>
-    			</div>
-    			<div class="col-md-4 col-sm-6 portfolio-item">
-    				<a href="https://ithriveatstanford.tumblr.com/" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <p class="fa fa-plus-circle fa-4x"></i>
-                            </div>
-                        </div>
-                        <img src="img/ithrive.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>iThrive @ Stanford Blog</h4>
-                        <p>HTML/CSS</p>
-                    </div>
-    			</div>
-    		</div>
-    		<div class="row">
-    			<div class="col-md-4 col-sm-6 portfolio-item">
-    				<a href="https://kcornn.github.io/daily-ui" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content" align="center">
-                                <p class="fa fa-plus-circle fa-4x"></i>
-                            </div>
-                        </div>
-                        <img src="img/dailyui.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>DailyUI</h4>
-                        <p>HTML/CSS, JavaScript, d3</p>
-                    </div>
-    			</div>
-    			<div class="col-md-4 col-sm-6 portfolio-item">
-    				<a href="https://kcornn.github.io/photos.html" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <p class="fa fa-plus-circle fa-4x"></i>
-                            </div>
-                        </div>
-                        <img src="img/dog.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dog Meme Photo Gallery</h4>
-                        <p>HTML/CSS</p>
-                    </div>
-    			</div>
-    			<div class="col-md-4 col-sm-6 portfolio-item">
-    				<a href="https://apocharityauction.herokuapp.com" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <p class="fa fa-plus-circle fa-4x"></i>
-                            </div>
-                        </div>
-                        <img src="img/charityauction.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Live Auction Website</h4>
-                        <p>HTML/CSS, Meteor, JavaScript, AngularJS</p>
-                    </div>
-    			</div>
-
-    		</div>
+    	<div>
+    		<button class="btn" data-rel="all">ALL</button>
+    		<button class="btn" data-rel="web">WEB DEV</button>
+    		<button class="btn" data-rel="design">DESIGN</button>
     	</div>
+    	<div class="container-fluid" id="portfolio">
+			<div class="col-md-4 col-sm-6 portfolio-item animated web all">
+				<a href="#yourmotivation" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover animated web all">
+                        <div class="portfolio-hover-content animated web all" align="center">
+                            <p class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    <img src="img/quote.png" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption animated web all">
+                    <h4>Motivational Quote Generator</h4>
+                    <p>HTML/CSS, JavaScript</p>
+                </div>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-item animated web all">
+				<a href="#apo" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover animated web all">
+                        <div class="portfolio-hover-content animated web all">
+                            <p class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    <img src="img/apo.png" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption animated web all">
+                    <h4>Alpha Phi Omega Website</h4>
+                    <p>HTML/CSS, JavaScript, AngularJS</p>
+                </div>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-item animated web all">
+				<a href="#charityauction" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover animated web all">
+                        <div class="portfolio-hover-content animated web all">
+                            <p class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    <img src="img/charityauction.png" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption animated web all">
+                    <h4>Live Auction Website</h4>
+                    <p>HTML/CSS, Meteor, JavaScript, AngularJS</p>
+                </div>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-item animated design all">
+				<a href="#dailyui" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover animated design all">
+                        <div class="portfolio-hover-content animated design all" align="center">
+                            <p class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    <img src="img/dailyui.png" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption animated design all">
+                    <h4>DailyUI</h4>
+                    <p>HTML/CSS, JavaScript, d3</p>
+                </div>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-item animated web all">
+				<a href="https://kcornn.github.io/photos.html" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover animated web all">
+                        <div class="portfolio-hover-content animated design all">
+                            <p class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    <img src="img/dog.png" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption animated web all">
+                    <h4>Dog Meme Photo Gallery</h4>
+                    <p>HTML/CSS</p>
+                </div>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-item animated web all">
+				<a href="https://ithriveatstanford.tumblr.com/" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover animated web all">
+                        <div class="portfolio-hover-content animated web all">
+                            <p class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    <img src="img/ithrive.png" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption animated web all">
+                    <h4>iThrive @ Stanford Blog</h4>
+                    <p>HTML/CSS</p>
+                </div>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-item animated design all">
+				<a href="#apo-marketing" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover animated design all">
+                        <div class="portfolio-hover-content animated design all">
+                            <p class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    <img src="" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption animated design all">
+                    <h4>Alpha Phi Omega Marketing</h4>
+                    <p>HTML/CSS</p>
+                </div>
+			</div> 
+			<!--<div class="col-md-4 col-sm-6 portfolio-item animated design all">
+				<a href="#typography" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover animated design all">
+                        <div class="portfolio-hover-content animated design all">
+                            <p class="fa fa-plus-circle fa-4x"></i>
+                        </div>
+                    </div>
+                    <img src="" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption animated design all">
+                    <h4>Typography</h4>
+                    <p>HTML/CSS</p>
+                </div>
+			</div>		
+    	</div>-->
 	</section>
+
+	<!-- MODAL STUFF -->
+	<!-- YOURMOTIVATION -->
+	<div class="portfolio-modal modal fade" id="yourmotivation" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">&times;</button>
+					<h3><a href="https://yourmotivation.herokuapp.com/">yourmotivation</a></h3>
+				</div>
+				<div class="modal-body">
+					<p>Motivational random quote generator, built for iThrive@Stanford, a well-being organization run by Stanford's Vaden Health Center.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- APO -->
+	<div class="portfolio-modal modal fade" id="apo" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">&times;</button>
+					<h3><a href="https://apo-zeta.github.io/">Alpha Phi Omega Website</a></h3>
+				</div>
+				<div class="modal-body">
+					<p>Created chapter website from scratch.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- APO CHARITY AUCTION -->
+	<div class="portfolio-modal modal fade" id="charityauction" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">&times;</button>
+					<h3><a href="https://apo-zeta.github.io/">Alpha Phi Omega Charity Auction</a></h3>
+				</div>
+				<div class="modal-body">
+					<p>Created fully functional live-auction website. Used Meteor to store bids and HTML, CSS, JavaScript, and AngularJS for the website/live updating of website.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- DAILY UI -->
+	<div class="portfolio-modal modal fade" id="dailyui" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">&times;</button>
+					<h3><a href="https://kcornn.github.io/daily-ui">DailyUI</a></h3>
+				</div>
+				<div class="modal-body">
+					<p>Personal project in which I designed UI interfaces using HTML, CSS, and JavaScript. Project page built with d3.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- APO MARKETING -->
+	<div class="portfolio-modal modal fade" id="apo-marketing" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">&times;</button>
+					<h3>Alpha Phi Omega: Marketing Materials</h3>
+				</div>
+				<div class="modal-body">
+					<p>Designed marketing materials for Alpha Phi Omega events using HTML and CSS.</p>
+					<img src="img/apo1.jpg">
+					<img src="img/apo2.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- TYPOGRAPHY -->
+	<!--<div class="portfolio-modal modal fade" id="typography" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">&times;</button>
+					<h3>Typography</h3>
+				</div>
+				<div class="modal-body">
+					<p>For fun, I design typography using HTML and CSS to experiment with fonts, colors, and layouts.</p>
+				</div>
+			</div>
+		</div>
+	</div>-->
 
     <!-- CONTACT -->
     <section id="contact" class="full">
