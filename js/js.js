@@ -25,7 +25,7 @@ $(function() {
 
 $(function () {
     var selected = "";
-    $(".btn-proj").click(function () {
+    $("#proj").click(function () {
         selected = $(this).attr("data-rel");
         console.log(selected);
         $("#portfolio").fadeTo(300,0.1);
