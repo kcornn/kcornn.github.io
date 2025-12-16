@@ -1,6 +1,7 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import reactLogo from "./assets/react.svg"
+import viteLogo from "/vite.svg"
+import "./App.css"
+import { ReactTyped } from "react-typed"
 
 function App() {
   return (
@@ -13,11 +14,10 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Kali Cornn</h1>
+      <ReactTyped strings={["software engineer"]} typeSpeed={40} />
       <div className="card">
-        <p>
-          hello world! portfolio in progress
-        </p>
+        <p>hello world! portfolio in progress</p>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
