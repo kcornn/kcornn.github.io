@@ -5,6 +5,7 @@
   color-scheme: light dark;
   --bg: #ffffff;
   --text: #000000;
+  --accent: #646cff;
 }
 
 body {
@@ -24,4 +25,5 @@ body {
 body.dark {
   --bg: #000000;
   --text: #ffffff;
+  --accent: #9fb4ff;
 }

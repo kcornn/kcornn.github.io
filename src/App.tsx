@@ -3,6 +3,8 @@ import "./App.css";
 import { ReactTyped } from "react-typed";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 type Theme = "light" | "dark";
 
@@ -48,13 +50,31 @@ function App() {
 
   return (
     <div className={`app ${theme}`}>
-      <button
-        className="toggle-theme"
-        onClick={toggleTheme}
-        aria-label="Toggle theme"
-      >
-        {theme === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
-      </button>
+      <div className={"header-actions"}>
+        <button
+          className="action-btn"
+          onClick={() =>
+            window.open("https://linkedin.com/in/kcornn", "_blank")
+          }
+          aria-label="LinkedIn profile link"
+        >
+          <LinkedInIcon />
+        </button>
+        <button
+          className="action-btn"
+          onClick={() => window.open("https://github.com/kcornn", "_blank")}
+          aria-label="Github profile link"
+        >
+          <GitHubIcon />
+        </button>
+        <button
+          className="action-btn"
+          onClick={toggleTheme}
+          aria-label="Toggle light/dark theme"
+        >
+          {theme === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
+        </button>
+      </div>
 
       <h1>Kali Cornn</h1>
       <ReactTyped strings={["frontend software engineer"]} typeSpeed={40} />

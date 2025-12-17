@@ -12,27 +12,35 @@
     background-color 300ms ease;
 }
 
-.toggle-theme {
+.header-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
   position: fixed;
   top: 16px;
   right: 16px;
+}
+
+.action-btn {
   background: transparent;
   color: var(--text);
   border: 1px solid transparent;
   padding: 8px;
   border-radius: 8px;
+  display: inline-flex; /* helps with btn size and centering */
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  display: inline-flex;
   transition:
     color 200ms ease,
     border-color 200ms ease,
     background-color 200ms ease;
 }
 
-.theme-toggle svg {
-  font-size: 20px;
+.action-btn svg {
+  font-size: 24px;
 }
 
-button:hover {
-  border-color: #646cff;
+.action-btn:hover {
+  border-color: var(--accent);
 }
