@@ -31,30 +31,6 @@
   right: 16px;
 }
 
-.action-btn {
-  background: transparent;
-  color: var(--text);
-  border: 1px solid transparent;
-  padding: 8px;
-  border-radius: 8px;
-  display: inline-flex; /* helps with btn size and centering */
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition:
-    color 200ms ease,
-    border-color 200ms ease,
-    background-color 200ms ease;
-}
-
-.action-btn svg {
-  font-size: 24px;
-}
-
-.action-btn:hover {
-  border-color: var(--accent);
-}
-
 .section {
   box-sizing: border-box;
   max-width: 900px;

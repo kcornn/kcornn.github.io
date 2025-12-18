@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import "./App.css";
 import { Accordion } from "./components";
 import { ReactTyped } from "react-typed";
+import styled from "@emotion/styled";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -36,6 +37,30 @@ const getTheme = (): Theme => {
   return prefersDark ? "dark" : "light";
 };
 
+/* Styled components */
+// TODO create component?
+const ActionBtn = styled.button`
+  background: transparent;
+  color: var(--text);
+  border: 1px solid transparent;
+  padding: 8px;
+  border-radius: 8px;
+  display: inline-flex; /* helps with btn size and centering */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition:
+    color 200ms ease,
+    border-color 200ms ease,
+    background-color 200ms ease;
+  &:hover {
+    border-color: var(--accent);
+  }
+  svg {
+    font-size: 24px;
+  }
+`;
+
 function App() {
   const [theme, setTheme] = useState<Theme>(() => getTheme());
 
@@ -64,7 +89,7 @@ function App() {
   return (
     <div className={`app ${theme}`}>
       <div className={"header-actions"}>
-        <button
+        <ActionBtn
           className="action-btn"
           onClick={() =>
             window.open("https://linkedin.com/in/kcornn", "_blank")
@@ -72,21 +97,21 @@ function App() {
           aria-label="LinkedIn profile link"
         >
           <LinkedInIcon />
-        </button>
-        <button
+        </ActionBtn>
+        <ActionBtn
           className="action-btn"
           onClick={() => window.open("https://github.com/kcornn", "_blank")}
           aria-label="Github profile link"
         >
           <GitHubIcon />
-        </button>
-        <button
+        </ActionBtn>
+        <ActionBtn
           className="action-btn"
           onClick={toggleTheme}
           aria-label="Toggle light/dark theme"
         >
           {theme === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
-        </button>
+        </ActionBtn>
       </div>
 
       <h1>Kali Cornn</h1>
