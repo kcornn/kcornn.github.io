@@ -10,11 +10,11 @@ body,
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  --bg: #ffffff;
-  --text: #000000;
-  --accent: #646cff;
-  --card: #f8fafc;
-  --muted: #6b7280;
+  --bg: #f0f0f0;
+  --text: #1c1c1c;
+  --accent: #e31f67b0;
+  --card: #fbf5f7;
+  --muted: #1c1c1cc6;
 }
 
 body {
@@ -31,12 +31,10 @@ body {
     color 300ms ease;
 }
 
-/* https://m2.material.io/design/color/dark-theme.html */
-/* TODO rethink colors */
 body.dark {
-  --bg: #121212;
-  --text: #ffffff;
-  --accent: #9fb4ff;
-  --card: #1f1b24;
-  --muted: #94a3b8;
+  --bg: #1a1a1a;
+  --text: #f0f0f0;
+  --accent: #ff9ecf;
+  --card: #111217;
+  --muted: #f0f0f0cf;
 }

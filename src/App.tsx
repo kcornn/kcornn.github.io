@@ -52,8 +52,8 @@ function App() {
 
   const sectionShadow =
     theme === "dark"
-      ? "0 20px 30px rgba(255, 255, 255, 0.05)"
-      : "0 20px 30px rgba(2,6,23,0.13)";
+      ? "0 20px 30px rgba(0, 0, 0, 0.6)"
+      : "0 20px 30px rgba(2, 6, 23, 0.06)";
 
   const baseAnim = {
     initial: { opacity: 0, y: 30, boxShadow: "0 0 0 rgba(0,0,0,0)" },
