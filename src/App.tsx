@@ -145,7 +145,13 @@ function App() {
           Autonomous Vehicle: The Role of Digital Assistants in User Interface
           Design. In 12th International Conference on Automotive User Interfaces
           and Interactive Vehicular Applications (AutomotiveUI '20). Association
-          for Computing Machinery, New York, NY, USA, 83–93.
+          for Computing Machinery, New York, NY, USA, 83–93.{" "}
+          <a
+            href="https://dl.acm.org/doi/10.1145/3409120.3410639"
+            target="_blank"
+          >
+            [ACM]
+          </a>
         </p>
       </motion.section>
 
