@@ -140,7 +140,21 @@ function App() {
         </p>
         <Accordion
           title="Selected coursework"
-          items={["CS 229: Machine Learning"]}
+          items={[
+            "CS 142: Web Applications",
+            "CS 224N: Natural Language Processing with Deep Learning",
+            "CS 224U: Natural Language Understanding",
+            "CS 229: Machine Learning",
+            "CS 229A: Applied Machine Learning",
+            "CS 230: Deep Learning",
+            "CS 231N: Convolutional Neural Networks for Visual Recognition",
+            "CS 448B: Data Visualization",
+            "STATS 141: Biostatistics",
+            "STATS 202: Data Mining and Analysis",
+            "STATS 216: Introduction to Statistical Learning",
+            "STATS 245: Data, Models and Applications to Healthcare Analytics",
+            "STATS 290: Computing for Data Science",
+          ]}
         />
       </motion.section>
     </div>
