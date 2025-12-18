@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import { motion } from "motion/react";
 import "./App.css";
+import { Accordion } from "./components";
 import { ReactTyped } from "react-typed";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
@@ -48,6 +50,17 @@ function App() {
 
   const toggleTheme = () => setTheme((t) => (t === "light" ? "dark" : "light"));
 
+  const sectionShadow =
+    theme === "dark"
+      ? "0 20px 30px rgba(255, 255, 255, 0.05)"
+      : "0 20px 30px rgba(2,6,23,0.13)";
+
+  const baseAnim = {
+    initial: { opacity: 0, y: 30, boxShadow: "0 0 0 rgba(0,0,0,0)" },
+    whileInView: { opacity: 1, y: 0, boxShadow: sectionShadow },
+    viewport: { once: true, amount: 0.2 },
+  } as const;
+
   return (
     <div className={`app ${theme}`}>
       <div className={"header-actions"}>
@@ -81,6 +94,55 @@ function App() {
       <div>
         <p>hello world! portfolio in progress</p>
       </div>
+
+      <motion.section
+        id="experience"
+        className="section"
+        {...baseAnim}
+        transition={{ duration: 0.6 }}
+      >
+        <h2>Experience</h2>
+        <p>Past work experience</p>
+      </motion.section>
+
+      <motion.section
+        id="research"
+        className="section"
+        {...baseAnim}
+        transition={{ duration: 0.6, delay: 0.08 }}
+      >
+        <h2>Research</h2>
+        <h3>Publications</h3>
+        <p>
+          Alpers, B.S., <span className="author-emphasis">Cornn, K.</span>,
+          Feitzinger, L.E., Khaliq, U., Park, S.Y., Beigi, B., Hills-Bunnell,
+          D.J., et al. (2020). Capturing Passenger Experience in a Ride-Sharing
+          Autonomous Vehicle: The Role of Digital Assistants in User Interface
+          Design. In 12th International Conference on Automotive User Interfaces
+          and Interactive Vehicular Applications (AutomotiveUI '20). Association
+          for Computing Machinery, New York, NY, USA, 83–93.
+        </p>
+      </motion.section>
+
+      <motion.section
+        id="education"
+        className="section"
+        {...baseAnim}
+        transition={{ duration: 0.6, delay: 0.16 }}
+      >
+        <h2>Education</h2>
+        <p>
+          Stanford University, M.S. in Statistics, January 2018 - August 2019
+        </p>
+        <p>
+          Stanford University, B.S. in Computer Science, September 2014 - June
+          2018
+        </p>
+        <Accordion
+          title="Selected coursework"
+          items={["CS 229: Machine Learning"]}
+        />
+      </motion.section>
     </div>
   );
 }

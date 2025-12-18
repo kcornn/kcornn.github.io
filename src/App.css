@@ -2,7 +2,10 @@
   color: var(--text);
   min-height: 100vh;
   padding: 2rem;
-  width: 100%;
+  width: min(75%, 1100px);
+  max-width: 1100px;
+  min-width: 320px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +13,13 @@
   transition:
     color 300ms ease,
     background-color 300ms ease;
+}
+
+@media (max-width: 640px) {
+  .app {
+    width: 100%;
+    padding: 1rem;
+  }
 }
 
 .header-actions {
@@ -43,4 +53,32 @@
 
 .action-btn:hover {
   border-color: var(--accent);
+}
+
+.section {
+  box-sizing: border-box;
+  max-width: 900px;
+  width: 100%;
+  background: var(--card);
+  padding: 40px 24px;
+  margin: 40px auto;
+  border-radius: 12px;
+  transition:
+    background-color 300ms ease,
+    transform 200ms ease;
+}
+
+.section h2 {
+  margin: 0 0 8px 0;
+  color: var(--text);
+}
+.section p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.author-emphasis {
+  text-decoration: underline;
+  font-weight: 900;
+  font-style: italic;
 }

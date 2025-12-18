@@ -1,3 +1,10 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -6,6 +13,8 @@
   --bg: #ffffff;
   --text: #000000;
   --accent: #646cff;
+  --card: #f8fafc;
+  --muted: #6b7280;
 }
 
 body {
@@ -22,8 +31,12 @@ body {
     color 300ms ease;
 }
 
+/* https://m2.material.io/design/color/dark-theme.html */
+/* TODO rethink colors */
 body.dark {
-  --bg: #000000;
+  --bg: #121212;
   --text: #ffffff;
   --accent: #9fb4ff;
+  --card: #1f1b24;
+  --muted: #94a3b8;
 }
