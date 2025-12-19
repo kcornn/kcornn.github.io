@@ -1,66 +1,15 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import "./App.css";
-import { Accordion } from "./components";
+import { Accordion, ActionBtn } from "./components";
+import type { Theme } from "./types";
+import { getTheme } from "./utils";
 import { ReactTyped } from "react-typed";
-import styled from "@emotion/styled";
 import CloseIcon from "@mui/icons-material/Close";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
-type Theme = "light" | "dark";
-
-// type guard to check if a value is a Theme,
-// used when retrieving from localStorage
-const isTheme = (v: unknown): v is Theme => {
-  return v === "light" || v === "dark";
-};
-
-const getSavedTheme = (): Theme | null => {
-  if (typeof window === "undefined") return null;
-  try {
-    const v = localStorage.getItem("themePref");
-    return isTheme(v) ? v : null;
-  } catch {
-    return null;
-  }
-};
-
-const getTheme = (): Theme => {
-  const saved = getSavedTheme();
-  if (saved) return saved;
-  const prefersDark =
-    typeof window !== "undefined" &&
-    typeof window.matchMedia === "function" &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
-  return prefersDark ? "dark" : "light";
-};
-
-/* Styled components */
-// TODO create component?
-const ActionBtn = styled.button`
-  background: transparent;
-  color: var(--text);
-  border: 1px solid transparent;
-  padding: 8px;
-  border-radius: 8px;
-  display: inline-flex; /* helps with btn size and centering */
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition:
-    color 200ms ease,
-    border-color 200ms ease,
-    background-color 200ms ease;
-  &:hover {
-    border-color: var(--accent);
-  }
-  svg {
-    font-size: 24px;
-  }
-`;
 
 function App() {
   const [theme, setTheme] = useState<Theme>(() => getTheme());
