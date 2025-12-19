@@ -127,7 +127,94 @@ function App() {
         transition={{ duration: 0.6 }}
       >
         <h2>Experience</h2>
-        <p>Past work experience</p>
+        <p>
+          Atlassian, Software Engineer II (fullstack, frontend-lean), 2019 -
+          2025
+        </p>
+        <ul>
+          <li>
+            <i>Tech stack:</i> React, Typescript, GraphQL, Kotlin
+          </li>
+          <li>
+            Joined{" "}
+            <a
+              href="https://www.atlassian.com/software/compass"
+              target="_blank"
+            >
+              Compass
+            </a>
+            , Atlassian's developer experience platform, as one of the founding
+            engineers in January 2021. Compass became generally available fall
+            2023.
+          </li>
+          <li>
+            Led 3 iterations of the revised Compass onboarding flow to increase
+            adoption and retention of component scorecards, working closely with
+            design and product to refine the UI experience.
+          </li>
+          <li>
+            Led a cross-team effort with 4 engineers across Bitbucket and
+            Compass to build a banner integration, achieving 1,000 weekly
+            Compass signups.
+          </li>
+          <li>
+            Delivered updated{" "}
+            <a
+              href="https://community.atlassian.com/forums/Compass-articles/Updated-CSV-importer-now-available/ba-p/2495470"
+              target="_blank"
+            >
+              CSV importer
+            </a>{" "}
+            in 1 month to meet customer requests, collaborating with content
+            design to refine scope while ensuring support for additional
+            component properties, leading to 10x increase in usage.
+          </li>
+          <li>
+            Spearheaded team-wide developer productivity initiative by
+            allocating 14% of work to devprod monthly, surpassing the 10% goal
+            and improving overall team efficiency.
+          </li>
+          <li>
+            <i>Other leadership</i>
+            <ul>
+              <li>Mentored 1 intern and 2 new grads</li>
+              <li>
+                Atlassian values interviewer (across a variety of levels/roles)
+              </li>
+              <li>Acted as Compass' internationalization liaison</li>
+              <li>
+                Served at Compass social planners lead (led planning of two
+                large offsites of 60+ attendees)
+              </li>
+              <li>
+                Attended TechTogether Boston 2020: Atlassian representative at
+                career fair, presented at women in tech session, judged
+                hackathon projects, assisted in Python workshop
+              </li>
+            </ul>
+          </li>
+          <li>
+            <i>Miscellaneous</i>
+            <ul>
+              <li>
+                Authored Atlassian community{" "}
+                <a
+                  href="https://community.atlassian.com/forums/Compass-articles/Building-Compass-Our-Developer-Platform-Journey/ba-p/3054039"
+                  target="_blank"
+                >
+                  article
+                </a>{" "}
+                outlining the journey from Microscope (interal PaaS) to Compass.
+                As a new grad, I was a Microscope UI developer.
+              </li>
+              <li>
+                Runner up, accessibility category, Atlassian Shipit 60
+                hackathon. Created Jira panel that generates accessibility
+                checklists based on issue information.
+              </li>
+            </ul>
+          </li>
+        </ul>
       </motion.section>
 
       <motion.section
@@ -162,13 +249,8 @@ function App() {
         transition={{ duration: 0.6, delay: 0.16 }}
       >
         <h2>Education</h2>
-        <p>
-          Stanford University, M.S. in Statistics, January 2018 - August 2019
-        </p>
-        <p>
-          Stanford University, B.S. in Computer Science, September 2014 - June
-          2018
-        </p>
+        <p>Stanford University, M.S. in Statistics, 2019</p>
+        <p>Stanford University, B.S. in Computer Science, 2018</p>
         <Accordion
           title="Selected coursework"
           items={[
