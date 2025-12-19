@@ -4,6 +4,7 @@ import "./App.css";
 import { Accordion } from "./components";
 import { ReactTyped } from "react-typed";
 import styled from "@emotion/styled";
+import CloseIcon from "@mui/icons-material/Close";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -64,6 +65,23 @@ const ActionBtn = styled.button`
 function App() {
   const [theme, setTheme] = useState<Theme>(() => getTheme());
 
+  /* MOBILE BANNER */
+  const [showMobileBanner, setShowMobileBanner] = useState<boolean>(() => {
+    if (typeof window === "undefined") return false;
+    try {
+      const dismissed = localStorage.getItem("hideMobileBanner");
+      return dismissed === "true" ? false : window.innerWidth <= 640;
+    } catch {
+      return false;
+    }
+  });
+
+  const dismissMobileBanner = () => {
+    localStorage.setItem("hideMobileBanner", "true"); // can only set strings
+    setShowMobileBanner(false);
+  };
+
+  /* THEME TOGGLING */
   useEffect(() => {
     if (theme === "dark") {
       document.body.classList.add("dark");
@@ -116,9 +134,20 @@ function App() {
 
       <h1>Kali Cornn</h1>
       <ReactTyped strings={["frontend software engineer"]} typeSpeed={40} />
-      <div>
-        <p>hello world! portfolio in progress</p>
-      </div>
+      {showMobileBanner && (
+        <div className="mobile-banner" role="region" aria-live="polite">
+          <p>
+            For best viewing experience, please view this website on desktop!
+          </p>
+          <button
+            className="mobile-banner-close"
+            onClick={dismissMobileBanner}
+            aria-label="Dismiss mobile banner"
+          >
+            <CloseIcon />
+          </button>
+        </div>
+      )}
 
       <motion.section
         id="experience"
@@ -224,6 +253,35 @@ function App() {
         transition={{ duration: 0.6, delay: 0.08 }}
       >
         <h2>Research</h2>
+        <p>
+          Associate Investigator and Statistician, University of California, San
+          Francisco, 2024 - Present
+        </p>
+        <ul>
+          <li>
+            Volunteer researcher in the{" "}
+            <a href="https://kornblithdatalab.ucsf.edu/" target="_blank">
+              UCSF Emergency Data Science Lab
+            </a>{" "}
+            led by Dr. Aaron Kornblith.
+          </li>
+          <li>
+            Worked directly with Dr. Kornblith to create an in-progress
+            systematic review on the PECARN traumatic brain injury/trauma
+            algorithm. Led data analysis and visualization efforts using R.
+          </li>
+        </ul>
+        <p>
+          Data Analyst Research Intern, Stanford University, Center of Design
+          Research, 2018 - 2020
+        </p>
+        <ul>
+          <li>
+            Used Python to clean/analyze data and create data visualizations for
+            a study analyzing the role of digital assistants in autonomous
+            vehicle ride experiences, sponsored by Ford.
+          </li>
+        </ul>
         <h3>Publications</h3>
         <p>
           Alpers, B.S., <span className="author-emphasis">Cornn, K.</span>,

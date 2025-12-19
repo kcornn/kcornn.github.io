@@ -37,7 +37,7 @@
   width: 100%;
   background: var(--card);
   padding: 40px 24px;
-  margin: 40px auto;
+  margin: 24px auto;
   border-radius: 12px;
   transition:
     background-color 300ms ease,
@@ -58,4 +58,40 @@
   text-decoration: underline;
   font-weight: 900;
   font-style: italic;
+}
+
+.mobile-banner {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .mobile-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 12px;
+    background: linear-gradient(
+      90deg,
+      rgba(247, 198, 216, 0.14),
+      rgba(100, 108, 255, 0.04)
+    );
+    color: var(--text);
+    border-radius: 8px;
+    width: 80%;
+    margin: 12px 0;
+  }
+
+  .mobile-banner p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .mobile-banner-close {
+    background: transparent;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+  }
 }
