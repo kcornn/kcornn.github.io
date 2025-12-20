@@ -51,6 +51,7 @@ function App() {
     initial: { opacity: 0, y: 30, boxShadow: "0 0 0 rgba(0,0,0,0)" },
     whileInView: { opacity: 1, y: 0, boxShadow: sectionShadow },
     viewport: { once: true, amount: 0.2 },
+    transition: { duration: 0.6 },
   } as const;
 
   return (
@@ -98,12 +99,7 @@ function App() {
         </div>
       )}
 
-      <motion.section
-        id="experience"
-        className="section"
-        {...baseAnim}
-        transition={{ duration: 0.6 }}
-      >
+      <motion.section id="experience" className="section" {...baseAnim}>
         <h2>Experience</h2>
         <p>
           Atlassian, Software Engineer II (fullstack, frontend-lean), 2019 -
@@ -128,7 +124,9 @@ function App() {
           <li>
             Led 3 iterations of the revised Compass onboarding flow to increase
             adoption and retention of component scorecards, working closely with
-            design and product to refine the UI experience.
+            design and product to refine the UI experience. Increased percentage
+            of users taking action within Compass after onboarding from 45% to
+            65%.
           </li>
           <li>
             Led a cross-team effort with 4 engineers across Bitbucket and
@@ -199,7 +197,7 @@ function App() {
         id="research"
         className="section"
         {...baseAnim}
-        transition={{ duration: 0.6, delay: 0.08 }}
+        transition={{ delay: 0.08 }}
       >
         <h2>Research</h2>
         <p>
@@ -250,10 +248,58 @@ function App() {
       </motion.section>
 
       <motion.section
+        id="teaching"
+        className="section"
+        {...baseAnim}
+        transition={{ delay: 0.16 }}
+      >
+        <h2>Teaching</h2>
+        <p>
+          Teaching Fellow, Stanford University and National Education Equity
+          Lab, 2024 - 2025
+        </p>
+        <ul>
+          <li>
+            2024: Taught a weekly{" "}
+            <a
+              href="https://digitaleducation.stanford.edu/projects/stanford-courses-title-i-high-school-students"
+              target="_blank"
+            >
+              Intro to Computers (equivalent to Stanford's CS 105)
+            </a>{" "}
+            section to a Title I high school class, covering how computers work,
+            HTML, CSS, and Python
+          </li>
+          <li>
+            2025: Grader and course assistant for limited-run version of the
+            course.
+          </li>
+        </ul>
+        <p>Course Assistant, Stanford University, 2018 - 2019</p>
+        <ul>
+          <li>
+            CS 105 (Intro to Computers) Head Course Assistant, Spring 2019
+          </li>
+          <li>
+            CS 108 (Object-Oriented Systems Design) Course Assistant, Fall 2018
+            and Winter 2019
+          </li>
+          <li>
+            CS 193C (Client-Side Technologies) Course Assistant, Summer 2018 and
+            Summer 2019
+          </li>
+          <li>
+            Held weekly office hours, graded student assignments, and
+            administered exams.
+          </li>
+        </ul>
+      </motion.section>
+
+      <motion.section
         id="education"
         className="section"
         {...baseAnim}
-        transition={{ duration: 0.6, delay: 0.16 }}
+        transition={{ delay: 0.24 }}
       >
         <h2>Education</h2>
         <p>Stanford University, M.S. in Statistics, 2019</p>
