@@ -54,10 +54,40 @@
   color: var(--muted);
 }
 
+.projects-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.projects-grid .section {
+  width: 480px;
+}
+
 .author-emphasis {
   text-decoration: underline;
   font-weight: 900;
   font-style: italic;
+}
+
+.view-btn {
+  margin: 16px 0;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--text);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition:
+    transform 100ms ease,
+    background-color 200ms ease,
+    border-color 200ms ease;
+}
+
+.view-btn:hover {
+  transform: translateY(-2px);
 }
 
 .mobile-banner {
