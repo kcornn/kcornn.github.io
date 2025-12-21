@@ -68,7 +68,7 @@ function App() {
     {
       title: "Project One",
       description: "Coming soon :)",
-      link: "https://kcornn.github.io/code-blocks/",
+      link: "/code-blocks/",
     },
   ];
 
