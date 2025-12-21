@@ -125,3 +125,11 @@
     cursor: pointer;
   }
 }
+
+.footer {
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
