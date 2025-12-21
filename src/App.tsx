@@ -59,30 +59,18 @@ function App() {
     "experience"
   );
 
-  // const projects: Array<{
-  //   title: string;
-  //   description: string;
-  //   link?: string;
-  //   delay?: number;
-  // }> = [
-  //   {
-  //     title: "Project One",
-  //     description: "Coming soon :)",
-  //     // link: "https://github.com/kcornn/",
-  //   },
-  //   {
-  //     title: "Project Two",
-  //     description: "Coming soon :)",
-  //     // link: "https://github.com/kcornn/",
-  //   },
-  // ];
-
   const projects: Array<{
     title: string;
     description: string;
     link?: string;
     delay?: number;
-  }> = [];
+  }> = [
+    {
+      title: "Project One",
+      description: "Coming soon :)",
+      link: "kcornn.github.io/code-blocks",
+    },
+  ];
 
   return (
     <>
