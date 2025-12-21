@@ -65,11 +65,11 @@ function App() {
     link?: string;
     delay?: number;
   }> = [
-    {
-      title: "Project One",
-      description: "Coming soon :)",
-      link: "/code-blocks/",
-    },
+    // {
+    //   title: "Project One",
+    //   description: "Coming soon :)",
+    //   link: "/code-blocks/",
+    // },
   ];
 
   return (
