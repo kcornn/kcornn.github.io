@@ -388,7 +388,7 @@ function App() {
                 <p>{project.description}</p>
                 {project.link && (
                   <a href={project.link} target="_blank">
-                    Demo / Repo
+                    Demo
                   </a>
                 )}
               </motion.section>
