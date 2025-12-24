@@ -65,11 +65,12 @@ function App() {
     link?: string;
     delay?: number;
   }> = [
-    // {
-    //   title: "Project One",
-    //   description: "Coming soon :)",
-    //   link: "/code-blocks/",
-    // },
+    {
+      title: "Code blocks",
+      description:
+        "Custom React component to display code blocks and corresponding notes, ideal for lecture notes!",
+      link: "/code-blocks/",
+    },
   ];
 
   return (
