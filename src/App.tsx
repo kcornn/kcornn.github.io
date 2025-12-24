@@ -227,7 +227,7 @@ function App() {
                       >
                         article
                       </a>{" "}
-                      outlining the journey from Microscope (interal PaaS) to
+                      outlining the journey from Microscope (internal PaaS) to
                       Compass. As a new grad, I was a Microscope UI developer.
                     </li>
                     <li>
