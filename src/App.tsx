@@ -116,12 +116,12 @@ function App() {
             aria-pressed={portfolioView === "projects"}
             aria-label={
               portfolioView === "experience"
-                ? "View projects (coming soon)"
+                ? "View projects"
                 : "View experience"
             }
           >
             {portfolioView === "experience"
-              ? "View projects (coming soon)"
+              ? "View projects"
               : "View experience"}
           </button>
         )}
