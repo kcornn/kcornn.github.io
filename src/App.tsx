@@ -153,6 +153,7 @@ function App() {
               <ul>
                 <li>
                   <i>Tech stack:</i> React, Typescript, GraphQL, Kotlin
+                  <i>Other tools used:</i> Figma, Storybook
                 </li>
                 <li>
                   Joined{" "}
@@ -190,6 +191,29 @@ function App() {
                   content design to refine scope while ensuring support for
                   additional component properties, leading to 10x increase in
                   usage.
+                </li>
+                <li>
+                  Added Compass tab to cross-product search across Bitbucket,
+                  Jira, and Confluence, increasing Compass signups and improving
+                  integration across Atlassian products.
+                </li>
+                <li>
+                  Contributed to the component search page, implementing{" "}
+                  <a
+                    href="https://community.atlassian.com/forums/Compass-articles/Bulk-Archive-Bulk-Delete-Now-Available/ba-p/2828963"
+                    target="_blank"
+                  >
+                    bulk archive and deletion
+                  </a>{" "}
+                  and a{" "}
+                  <a
+                    href="https://community.atlassian.com/forums/Compass-articles/Personalize-your-Search-Result-with-Custom-Column-Selector/ba-p/2798768"
+                    target="_blank"
+                  >
+                    column selector
+                  </a>{" "}
+                  on the search results table, enhancing component management
+                  and search personalization.
                 </li>
                 <li>
                   Spearheaded team-wide developer productivity initiative by
