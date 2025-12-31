@@ -178,11 +178,18 @@ function App() {
                   available fall 2023.
                 </li>
                 <li>
-                  Led 3 iterations of the revised Compass onboarding flow to
-                  increase adoption and retention of component scorecards,
-                  working closely with design and product to refine the UI
-                  experience. Increased percentage of users taking action within
-                  Compass after onboarding from 45% to 65%.
+                  Led UI stream of pull request cycle time widget project in
+                  Jira. Created custom React line charts and updated Druid/SQL
+                  queries to fetch pull request information for configurable
+                  timeframes.
+                </li>
+                <li>
+                  Led 3 iterations of the Compass onboarding flow to boost
+                  adoption and retention of component scorecards, collaborating
+                  with design, product, and data science to enhance the UI. Led
+                  team of 4 engineers and coordinated with 2 subteams. Increased
+                  post-onboarding user action from 45% to 65%. Refactored 10,000
+                  lines of frontend legacy code for better maintainability.
                 </li>
                 <li>
                   Led a cross-team effort with 4 engineers across Bitbucket and
