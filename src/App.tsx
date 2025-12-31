@@ -64,12 +64,20 @@ function App() {
     description: string;
     link?: string;
     delay?: number;
+    type: "demo" | "repo";
   }> = [
     {
       title: "Code blocks",
       description:
         "Custom React component to display code blocks and corresponding notes, ideal for lecture notes!",
       link: "/code-blocks/",
+      type: "demo",
+    },
+    {
+      title: "Notion job tracker Chrome extension",
+      description: "Chrome extension to save a job to Notion database",
+      link: "https://github.com/kcornn/notion-job-tracker",
+      type: "repo",
     },
   ];
 
@@ -153,6 +161,8 @@ function App() {
               <ul>
                 <li>
                   <i>Tech stack:</i> React, Typescript, GraphQL, Kotlin
+                </li>
+                <li>
                   <i>Other tools used:</i> Figma, Storybook
                 </li>
                 <li>
@@ -412,7 +422,7 @@ function App() {
                 <p>{project.description}</p>
                 {project.link && (
                   <a href={project.link} target="_blank">
-                    Demo
+                    {project.type === "demo" ? "Demo" : "Github repo"}
                   </a>
                 )}
               </motion.section>
