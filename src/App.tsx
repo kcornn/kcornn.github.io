@@ -74,6 +74,13 @@ function App() {
       type: "demo",
     },
     {
+      title: "Components",
+      description:
+        "Work-in-progress custom component library with Storybook examples",
+      link: "/components/",
+      type: "demo",
+    },
+    {
       title: "Notion job tracker Chrome extension",
       description: "Chrome extension to save a job to Notion database",
       link: "https://github.com/kcornn/notion-job-tracker",
