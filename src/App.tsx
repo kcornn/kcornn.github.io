@@ -444,7 +444,7 @@ function App() {
           </div>
         )}
       </div>
-      <footer className="footer">{"Last updated December 2025"}</footer>
+      <footer className="footer">{"Last updated March 2026"}</footer>
     </>
   );
 }
