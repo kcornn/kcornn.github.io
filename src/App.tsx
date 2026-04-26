@@ -162,6 +162,19 @@ function App() {
             <motion.section id="experience" className="section" {...baseAnim}>
               <h2>Experience</h2>
               <p>
+                <a
+                  href="https://www.glean.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Glean
+                </a>
+                , Software Engineer (frontend), 2026 - Present
+              </p>
+              <ul>
+                <li>Growth team</li>
+              </ul>
+              <p>
                 Atlassian, Software Engineer II (fullstack, frontend-lean), 2019
                 - 2025
               </p>
@@ -444,7 +457,7 @@ function App() {
           </div>
         )}
       </div>
-      <footer className="footer">{"Last updated March 2026"}</footer>
+      <footer className="footer">{"Last updated April 2026"}</footer>
     </>
   );
 }
